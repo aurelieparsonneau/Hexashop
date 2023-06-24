@@ -1,0 +1,364 @@
+@import url("./reset.css");
+
+/* TABLETTE */
+@media screen and (min-width: 780px) {
+  header {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .banner,
+  .women,
+  .product,
+  .media,
+  .newsletter {
+    margin: 2rem;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    position: relative;
+  }
+
+  .banner :first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .banner > * {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner :first-child {
+    background-image: url(../img/banner_big.jpg);
+    background-size: cover;
+  }
+
+  .banner > *:nth-child(2) {
+    background-image: url(../img/banner_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .banner > *:nth-child(3) {
+    background-image: url(../img/banner_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner > *:nth-child(4) {
+    background-image: url(../img/banner_03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner > *:nth-child(5) {
+    background-image: url(../img/banner_04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .women {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .women > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .women > *:not(:first-child) {
+    aspect-ratio: 1/1;
+  }
+
+  .women :first-child {
+    grid-column: 1/3;
+    height: auto;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .product > * {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product :first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .product1 > * {
+    padding: 2rem;
+  }
+
+  .media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .media > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .media > *:not(:first-child) {
+    aspect-ratio: 1/1;
+  }
+
+  .media :first-child {
+    grid-column: 1/3;
+    margin-bottom: 2rem;
+  }
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .newsletter > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .newsletter :first-child {
+    grid-column: 1/3;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter div > * {
+    margin: 1rem;
+  }
+
+  .newsletter form {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex; */
+    font-size: 1.2rem;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding: 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer ul > * {
+    margin: 1rem;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+
+  .banner,
+  .women,
+  .product,
+  .media,
+  .newsletter {
+    margin: 2rem;
+  }
+
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    position: relative;
+  }
+
+  .banner :first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .banner > * {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner :first-child {
+    background-image: url(../img/banner_big.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner > *:nth-child(2) {
+    background-image: url(../img/banner_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .banner > *:nth-child(3) {
+    background-image: url(../img/banner_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner > *:nth-child(4) {
+    background-image: url(../img/banner_03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner > *:nth-child(5) {
+    background-image: url(../img/banner_04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hover1,
+  .hover2,
+  .hover3,
+  .hover4 {
+    display: none;
+  }
+
+  .women {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .women > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .women > *:not(:first-child) {
+    aspect-ratio: 1/1;
+  }
+
+  .women :first-child {
+    grid-column: 1/4;
+    height: auto;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 1rem; */
+  }
+
+  .product > * {
+    /* aspect-ratio: 1/1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product :first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  /* .product1 > * {
+    padding: 2rem;
+} */
+
+  .media {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .media > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .media > *:not(:first-child) {
+    aspect-ratio: 1/1;
+  }
+
+  .media :first-child {
+    grid-column: 1/7;
+    margin-bottom: 2rem;
+  }
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .newsletter > * {
+    /* aspect-ratio: 1/1; */
+  }
+
+  .newsletter :first-child {
+    grid-column: 1/4;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter div > * {
+    margin: 1rem;
+  }
+
+  .newsletter form {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex; */
+    font-size: 1.3rem;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding: 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer ul > * {
+    margin: 1rem;
+  }
+}
